@@ -1,0 +1,362 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <script language="JavaScript" src="PLUGINS_ROOT/org.eclipse.help/livehelp.js"></script><link href="style.css" rel="stylesheet" type="text/css">
+      <title>The Dependencies View</title>
+   </head>
+   <body>
+      <a name="the_dependencies_view"></a><h1>The Dependencies View</h1>
+          
+          
+      <p>
+         Rails makes doing common tasks relatively 
+         easy but adds a level of complexity by adding relationships and 
+         dependencies not obvious through  use of conventions, 
+         meta programming and naming patterns. The Dependencies View keeps a live 
+         view of class and logical relationships. While navigating
+         source code or nodes in the Rails Explorer, 
+         use the Dependencies View to track focus and show the 
+         dependencies (i.e., class, method, controller, 
+         action, view, attributes). The Dependency
+         View reveals references and from a selected class or method. 
+         This is a very useful tool for 
+         navigating and introspecting software.
+         Relationships are determined by type inference 
+         and semantic analysis. Dependencies are updated 
+         in real-time during editing and navigation. Relationships, between 
+         controllers, actions, views, models, helpers, routes, migrations, 
+         schema and tests are related and determined by convention and 
+                 method call analysis.
+             
+      </p>
+          
+              <a name="using_the_dependencies_view"></a><h2>Using the Dependencies View</h2>
+              
+      <p>
+                    This example shows the <span class="menuItem">Dependencies View</span>
+                     in action:
+                 
+      </p>
+              <span class="imageBlock"><img src="graphics/dependencyview.png" alt="Dependencies View" width="792" height="376"></span>
+              
+      <p>
+                     In this example the Model class <strong>LinItem</strong>
+                     is open in the <span class="menuItem">Ruby Editor</span>. 
+                     In this case the following Outbound dependencies are shown:
+                 
+      </p>
+              
+      <ul>
+                     
+         <li>Order and Product Model relationships</li>
+                     
+         <li>Order and Product Model classes</li>
+                 
+      </ul>
+              
+      <p>
+                     The following Inbound dependencies are also revealed:
+                 
+      </p>
+              
+      <ul>
+                     
+         <li>The Order Model</li>
+                     
+         <li>Integration Test DSL User Story</li>
+                     
+         <li>
+                                Integration Test User Story
+                            
+         </li>
+                 
+      </ul>
+              
+      <table class="notes">
+         <tr>
+            <td class="notes">
+               <p class="note">Note:</p>
+            </td>
+            <td class="notes">
+               <p>
+                                  Use of the "depot" application for demonstration purposes generously 
+                                  granted by Dave Thomas, author of <a href="http://www.pragmaticprogrammer.com">
+                                         The Pragmatic Programmers' 
+                                         "Agile Web Development with Rails"
+                                     </a> .
+                                  
+                              
+               </p>
+            </td>
+         </tr>
+      </table>
+              
+      <table class="regular">
+                     
+         <tr>
+                            
+            <th><b>User Case</b></th>
+                            
+            <th><b>Action</b></th>
+                        
+         </tr>
+                     
+         <tr>
+                            
+            <td class="regular">
+                                   
+               <p>Open the Dependencies View</p>
+                               
+            </td>
+                            
+            <td class="regular">
+                                   
+               <p>
+                                      From the workbench select:
+                                      <a href="javascript:executeCommand(&#34;org.eclipse.ui.views.showView(org.eclipse.ui.views.showView.viewId=com.codegear.dependencies.ui.view)&#34;)">
+                                             The Dependencies View </a>
+                                          <img src="graphics/application_go.png" alt="The Dependencies View" width="16" height="16">
+                                      
+               </p>
+                                   
+               <p>
+                                          
+                                              <span class="menuItem">
+                                                 Window
+                                             <img alt="|" height="9" width="11" src="../graphics/path.jpg"></span>
+                                              <span class="menuItem">
+                                                 Show View
+                                             <img alt="|" height="9" width="11" src="../graphics/path.jpg"></span>
+                                              <span class="menuItem">
+                                                 Dependencies
+                                             </span>
+                                          
+                                      
+               </p>
+                               
+            </td>
+                        
+         </tr>
+                     
+         <tr>
+                            
+            <td class="regular">
+                                   
+               <p>Change the Active Selection in an Editor</p>
+                               
+            </td>
+                            
+            <td class="regular">
+                                   
+               <p>
+                                     The Active selection changes dynamically during project navigation. 
+                                  
+               </p>
+                                   
+               <p>
+                                      Focus the Dependency view on a specific element by placing the
+                                      cursor in the desired element.
+                                  
+               </p>
+                               
+            </td>
+                        
+         </tr>
+                     
+         <tr>
+                            
+            <td class="regular">
+                                   
+               <p>Change the Active Selection in a View</p>
+                               
+            </td>
+                            
+            <td class="regular">
+                                   
+               <p>
+                                  Select an element in the <span class="menuItem">Rails Explorer
+                                     to reveal dependencies in the view.</span>
+                                      
+               </p>
+                               
+            </td>
+                        
+         </tr>
+                     
+         <tr>
+                            
+            <td class="regular">
+                                   
+               <p>Navigate a project from the Dependencies View</p>
+                               
+            </td>
+                            
+            <td class="regular">
+                                   
+               <p>
+                                  Double-click an element in the <span class="menuItem">Dependencies View</span>
+                                  to open it.
+                              
+               </p>
+                               
+            </td>
+                        
+         </tr>
+                     
+         <tr>
+                            
+            <td class="regular">
+                                   
+               <p>Change View Filtering</p>
+                               
+            </td>
+                            
+            <td class="regular">
+                                   
+               <p>
+                                          
+                  <table class="regular">
+                                                 
+                     <tr>
+                                                        
+                        <th><b>Link with Selection</b></th>
+                                                        
+                        <td class="regular">
+                                                               
+                           <p>
+                                                                      <img src="graphics/link16.png" alt="Link with Selection" width="16" height="16">
+                                                                  
+                           </p>
+                                                           
+                        </td>
+                                                        
+                        <td class="regular">
+                                                               
+                           <p>
+                                                                  Link the View with data selected in the editor.
+                                                              
+                           </p>
+                                                           
+                        </td>
+                                                    
+                     </tr>
+                                                 
+                     <tr>
+                                                        
+                        <th><b>Include Containers</b></th>
+                                                        
+                        <td class="regular">
+                                                               
+                           <p>
+                                                                      <img src="graphics/includecontainers16.png" alt="Include Containers" width="16" height="16">
+                                                                  
+                           </p>
+                                                           
+                        </td>
+                                                        
+                        <td class="regular">
+                                                               
+                           <p>
+                                                                  Include element container listings in View.
+                                                              
+                           </p>
+                                                           
+                        </td>
+                                                    
+                     </tr>
+                                                 
+                     <tr>
+                                                        
+                        <th><b>Select Types</b></th>
+                                                        
+                        <td class="regular">
+                                                               
+                           <p>
+                                                                      <img src="graphics/filter16.png" alt="Select Types" width="16" height="16">
+                                                                  
+                           </p>
+                                                           
+                        </td>
+                                                        
+                        <td class="regular">
+                                                               
+                           <p>
+                                                                  Specify element types to reveal in View.
+                                                              
+                           </p>
+                                                           
+                        </td>
+                                                    
+                     </tr>
+                                                 
+                     <tr>
+                                                        
+                        <th><b>Show Inbound</b></th>
+                                                        
+                        <td class="regular">
+                                                               <img src="graphics/inbound16.gif" alt="Show Inbound" width="16" height="16">
+                                                           
+                        </td>
+                                                        
+                        <td class="regular">Show only inbound dependencies in the View.</td>
+                                                    
+                     </tr>
+                                                 
+                     <tr>
+                                                        
+                        <th><b>Show Outbound</b></th>
+                                                        
+                        <td class="regular">
+                                                               <img src="graphics/outbound16.gif" alt="Show Outbound" width="16" height="16">
+                                                           
+                        </td>
+                                                        
+                        <td class="regular">
+                                                               
+                           <p>
+                                                                  Show only outbound dependencies in the View.
+                                                              
+                           </p>
+                                                           
+                        </td>
+                                                    
+                     </tr>
+                     
+                                                 
+                     <tr>
+                                                        
+                        <th><b>Show Both</b></th>
+                                                        
+                        <td class="regular">
+                                                               
+                           <p>
+                                                                      <img src="graphics/inoutbound16.gif" alt="Show Both" width="16" height="16">
+                                                                  
+                           </p>
+                                                           
+                        </td>
+                                                        
+                        <td class="regular">
+                                                               
+                           <p>Show inbound and outbound dependencies in the View.</p>
+                                                           
+                        </td>
+                                                    
+                     </tr>
+                                             
+                  </table>
+                                      
+               </p>
+                               
+            </td>
+                        
+         </tr>
+         
+                 
+      </table>
+          
+      <br><nowrap><span style="font-size:75%;e"><img alt="Corporate Logo" src="../graphics/codegear16squared.png">CodeGear brand 
+            and product names are service marks, trademarks or registered trademarks of Borland Software 
+            Corporation in the United States and other countries.
+            </span></nowrap><br></body>
+</html>

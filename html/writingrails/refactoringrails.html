@@ -1,0 +1,192 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <script language="JavaScript" src="PLUGINS_ROOT/org.eclipse.help/livehelp.js"></script><link href="../style.css" rel="stylesheet" type="text/css">
+      <title>Refactoring a Rails Project</title>
+   </head>
+   <body>
+      <a name="refactoring_a_rails_project"></a><h1>Refactoring a Rails Project</h1>
+          
+          
+      <p>
+         Code evolves as technology and market demands evolve. 
+         Over time, existing code may need to be changed to allow 
+         more room to grow, to improve performance, to 
+         accommodate changing needs, or simply to 
+         clean up the code base. Refactoring is the 
+         term used to describe the process of redesigning 
+         existing code without changing its behavior from the 
+                 user's point of view. 
+             
+      </p>
+          
+      <p>Refactoring may be small or extensive, 
+                 but even small changes can introduce bugs. Refactoring must be 
+                 done correctly and completely to be effective. One change 
+                 can have permutations throughout the entire code base. 
+                 Refactoring handles the entire set of permutations 
+                 responsibly and durably, with safe operation, so that no 
+                 behavior is changed beyond improvements in performance or maintainability.
+                 
+      </p>
+                  
+      <p>
+                     Refactoring support is now expected in typed language 
+                     IDEs but is not readily available in dynamic language IDEs. 
+                     It is difficult to perform automated refactorings for dynamic 
+                     languages since type information is not statically available. 
+                     3rdRail provides refactorings by performing advanced type 
+                     inference (statically analyzing a program to determine types) 
+                     and semantic type inference (statically analyzing a program 
+                     in the context of the specific frameworks semantics).
+                 
+      </p>
+          
+      <p>
+                 For a demonstration of refactoring, see the video
+                 <a href="http://dn.codegear.com/article/37037">
+                        Refactor a Rails Action.
+                    </a>  
+             
+      </p>
+          
+          
+              
+      <p><strong>
+                       To perform a refactoring:
+                    </strong></p>
+              
+      <ol>
+                     
+         <li>
+                            
+                                Highlight the Rails Item:
+                            <br>
+                        
+         </li>
+                     
+         <li>
+                            
+                               Right-click and select the <span class="menuItem">Refactor menu</span>.
+                                <br>
+                        
+         </li>
+                     
+         <li>
+                            
+                                Choose type of refactoring (context sensitive selection):
+                            <br>
+                            
+            <ul>
+                                   
+               <li>
+                                              <a href="renamingaction.html">Renaming an Action</a>
+                                          
+               </li>
+                                   
+               <li>
+                                              <a href="renamingcontroller.html">Renaming a Controller</a>
+                                          
+               </li>
+                                   
+               <li>
+                                              <a href="renamingview.html">Renaming a View</a>
+                                          
+               </li>
+                               
+            </ul>
+                            
+            <table class="notes">
+               <tr>
+                  <td class="notes">
+                     <p class="tip">Tip:</p>
+                  </td>
+                  <td class="notes">
+                     <p>
+                                                If the item selected is not a controller, view or action, 
+                                                the Rename Rails Item is displayed but disabled. 
+                                            
+                     </p>
+                  </td>
+               </tr>
+            </table>
+                        
+         </li>
+                     
+         <li>
+                            
+                                In the <span class="menuItem">Refactor Dialog</span>
+                                review refactor information and modify the criteria 
+                                as appropriate for the content.
+                            <br>
+                        
+         </li>
+                     
+         <li>
+                            
+                                Click <span class="menuItem">Preview</span> to preview
+                                the refactor task. 
+                            <br>
+                            
+                                The <span class="menuItem">Preview dialog</span> provides a 
+                                check list of all directories, 
+                                files, declarations and usages affected by the refactoring. 
+                                Select individual items to be removed from the refactoring. 
+                                Click an item in the check list to reveal the original data 
+                                and the described change (highlighted).
+                            <br>
+                            
+                                Click <span class="menuItem">OK</span>
+                                to process the refactor task.
+                            <br>
+            
+                            
+            <table class="notes">
+               <tr>
+                  <td class="notes">
+                     <p class="warning">Warning: </p>
+                  </td>
+                  <td class="notes">
+                     <p>
+                                                Dynamic language refactoring 
+                                                can not be guaranteed to be 100% accurate. 
+                                                Testing after refactoring is encouraged.  
+                                            
+                     </p>
+                  </td>
+               </tr>
+            </table>
+                            
+            <table class="notes">
+               <tr>
+                  <td class="notes">
+                     <p class="tip">Tip:</p>
+                  </td>
+                  <td class="notes">
+                     <p>
+                                              Where changes are not made in the <span class="menuItem">Preview Dialog</span>,
+                                                Undo Refactoring from the workbench:
+                                            
+                     </p>
+                     <p>
+                                                
+                                                    <span class="menuItem">Edit<img alt="|" height="9" width="11" src="../graphics/path.jpg"></span>
+                                                    <span class="menuItem">Undo.</span>
+                                                
+                                            
+                     </p>
+                  </td>
+               </tr>
+            </table>
+                        
+         </li>
+                 
+      </ol>
+          
+          
+          
+      <br><nowrap><span style="font-size:75%;e"><img alt="Corporate Logo" src="../graphics/codegear16squared.png">CodeGear brand 
+            and product names are service marks, trademarks or registered trademarks of Borland Software 
+            Corporation in the United States and other countries.
+            </span></nowrap><br></body>
+</html>

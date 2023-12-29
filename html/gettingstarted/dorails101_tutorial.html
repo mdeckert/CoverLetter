@@ -1,0 +1,304 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <script language="JavaScript" src="PLUGINS_ROOT/org.eclipse.help/livehelp.js"></script><link href="../style.css" rel="stylesheet" type="text/css">
+      <title>The Rails 101 Blog Tutorial</title>
+   </head>
+   <body>
+      <a name="the_rails_101_blog_tutorial"></a><h1>The Rails 101 Blog Tutorial</h1>
+          
+          
+              
+      <p>Note: This tutorial assumes that a standard Ruby on Rails environment is configured.  To set up such an environment automatically,
+         use the 3rdRail "Ruby on Rails Install" available from the 3rdRail installation launcher.
+      </p>  
+                   
+                  
+      <p><strong>Create a New Rails Project:</strong></p>
+                  
+      <ol>
+                         
+         <li>
+                                Open the 
+                                    <a href="javascript:executeCommand(&#34;org.eclipse.ui.newWizard(newWizardId=com.codegear.rails.ui.wizards.newRailsProject)&#34;)">
+                                           New Rails Project Wizard
+                                       </a>
+                                    <img src="../graphics/application_go.png" alt="New Rails Project Wizard" width="16" height="16">
+                                <br>
+                                
+                                    
+                                        <span class="menuItem">File<img alt="|" height="9" width="11" src="../graphics/path.jpg"></span>
+                                        <span class="menuItem">New Rails Project.</span>
+                                    
+                                <br>
+                            
+         </li>
+                         
+         <li>
+                                Name the project:<br>
+                                <pre>RailsDemo</pre>
+                            </li>
+                         
+         <li>
+                                3rdRail cannot create a new project unless the Ruby Interpreter
+                                is configured. If prompted, click <span class="menuItem">Configure Interpreters...</span>
+                                 and select one in the dialog.  Is no interpreters are shown, use the <span class="menuItem">Search...</span> button to locate one.
+                                The 3rdRail installation process includes a Ruby interpreter as part of the <span class="menuItem">Ruby on Rails Install</span>.
+                                Click <span class="menuItem">OK</span> to return to the wizard.<br>
+                            
+         </li>
+                         
+         <li>
+                                
+                                    This tutorial is compatible with both Rails 1.x and 2.x.  Specifying an explicit Rails version is
+            optional.
+                                <br>
+                            
+         </li>
+                         
+         <li>
+                                
+                                    Select the Database Type you are using.  If you do not already have a database setup, the 3rdRail
+            installation launcher provides the option to install either <span class="menuItem">InterBase</span> or <span class="menuItem">MySQL</span>.  Both <span class="menuItem">SQLite</span> and <span class="menuItem">InterBase</span> support automatic database creation, while the remaining databases require use of the database specific interactive client
+            to manually create a database for each project.  <span class="menuItem">SQLite 3</span> is installed by default on OS X 10.5 (Leopard).  Specific steps for creating a database in MySQL are provided below.
+                                <br>
+                            
+         </li>
+                         
+         <li>
+                                
+                                    Click <span class="menuItem">Finish</span> to close the wizard.
+                                <br>
+                            
+         </li>
+                     
+      </ol>
+              
+              
+                  
+      <p><strong>Set up a Database:</strong></p>
+                  
+      <ol>
+                         
+         <li>
+                                
+                                From the <span class="menuItem">Rails Explorer</span> navigate to:
+                            <br>
+                                <pre>RailsDemo/config/database.yml</pre>
+                            </li>
+                         
+         <li>
+                                Open the file in the Editor and add user name
+                                    and password information
+                                    for the RailsDemo_development database:
+                                    <br>
+                                <pre>database: RailsDemo_development</pre>
+                                <pre>user name: {username}</pre>
+                                <pre>password: {password}</pre>
+                                <pre>host: localhost</pre>
+                            </li>
+                         
+         <li>
+                                
+                                    Create the <span class="codeInline">RailsDemo_development</span> database: <br>
+                                
+                                  
+                                
+                                    If your Database Type is either <span class="menuItem">SQLite</span> or <span class="menuItem">InterBase</span>, this database configuration step is unnecessary.
+                                    <br>
+                                    
+                                    Use the interactive database client to create the database.  Specific steps for MySQL follow.<br>
+                                     
+                                    Assuming that MySQL installed correctly, you have a user called 
+                                    root with a password you selected at install time. 
+                                    To start the MySQL client at the command line:  <br>
+                                <pre>mysql -u root -p</pre>
+                                
+                                Then at the MySQL client prompt type:  <br>
+                                <pre>mysql&gt; create database RailsDemo_development;</pre>
+                            </li>
+                     
+      </ol>
+              
+              
+        
+              
+              
+                  
+      <p><strong>Create the Model and Run the Migration:</strong></p>
+                  
+      <ol>
+                         
+         <li>
+                                
+                                    Open the
+                                <br>
+                                
+                                    <a href="javascript:executeCommand(&#34;org.eclipse.ui.newWizard(newWizardId=com.codegear.rails.ui.wizards.newRailsResource)&#34;)">
+                                           New Rails Resource Wizard 
+                                       </a>
+                                    <img src="../graphics/application_go.png" alt="New Rails Resource Wizard" width="16" height="16">
+                                <br>
+                                
+                                    
+                                        <span class="menuItem">File<img alt="|" height="9" width="11" src="../graphics/path.jpg"></span>
+                                        <span class="menuItem">New<img alt="|" height="9" width="11" src="../graphics/path.jpg"></span>
+                                        <span class="menuItem">Rails Model.</span>
+                                    
+                                <br>
+            
+            
+                            
+         </li>
+                         
+         <li>
+                                
+                                    Choose "RailsDemo" in the Project dropdown.
+                                <br>
+                            
+         </li>
+                         
+         <li>
+                                
+                                    Name the model:
+                                <br>
+                                <pre>post</pre>
+                                
+                                    Next, create the attributes for the post model. 
+                                <br>
+                            
+         </li>
+                         
+         <li>
+                            
+                                
+                                Type 
+                                 <span class="codeInline">title</span>
+                                in the Name column. By default it is a string type.
+                                Click in the Required field to open the <span class="menuItem">Configure Required Validation Wizard</span>.
+                                    Check "Enabled".
+                                Click in the On field and select "save". 
+                                Type 
+                                "must be entered to save this post." in the Message field.
+                                Click <span class="menuItem">Ok</span>.
+                                <br>
+                            
+         </li>
+                         
+         <li>
+                                
+                                    Click <span class="menuItem">Add</span> to add another attribute.
+                                    Type "content" in the Name column. 
+                                    Click in the type column and change the type to text.
+                                    Click in the  Required field to open the <span class="menuItem">Configure Required Validation Wizard</span>.
+                                    Check "Enabled".
+                                    Click in the On field and select "save". 
+                                    Type 
+                                    "must be entered to save this post." in the Message field.
+                                    Click <span class="menuItem">Ok</span>.
+                                <br>
+                            
+         </li>
+                         
+         <li>
+                                
+                                    Click <span class="menuItem">Add</span> to add another attribute.
+                                    Type "date" in the Name column. 
+                                    Click in the type column and change the type to datetime.
+                                <br>
+                            
+         </li>
+                       
+                         
+         <li>
+                                Ensure that <span class="menuItem">Run the Migration after creating the Model</span> is checked. <br>
+                                
+                                   Ensure that <span class="menuItem">Create a Scaffold for the generated Resource</span> is checked. 
+                                <br>
+                            
+         </li>
+                         
+         <li>
+                                
+                                    Click <span class="menuItem">Finish</span>.
+                                <br>
+                            
+         </li>
+                         
+         <li>
+                                 
+                                3rdRail creates the model and controller, and opens the <span class="menuItem">Ruby Editor</span>.  
+                                <br>
+                                 
+                                The <span class="menuItem">Dependencies View</span> shows outbound and inbound dependencies. 
+                                <br>
+                                 
+                                    The <span class="menuItem">Project Commander</span> shows the Rails code and 
+                                    hyperlinks to the generated files. 
+                                <br>
+                                     
+                                     Browse in the <span class="menuItem">Rails Explorer</span> to see all the elements of the Rails project.
+                                    <br>
+                            
+         </li>
+                     
+      </ol>
+              
+              
+              
+                  
+      <p><strong>Run the Application:</strong></p>
+                  
+      <ol>
+                         
+         <li>
+                                Click the <span class="menuItem">Embedded Mozilla Browser</span> icon from the main <span class="menuItem">Workbench Toolbar</span>
+                                    and enter the following URL:
+                                <br>
+                                <pre>localhost:3000</pre>
+                                The Rails Welcome page displays.<br>
+                                
+            <table class="notes">
+               <tr>
+                  <td class="notes">
+                     <p class="note">:</p>
+                  </td>
+                  <td class="notes">
+                     <p>If the application server does not automatically start, type  "script/server" in the 
+                                                <span class="menuItem">Project Commander</span>. 
+                     </p>
+                  </td>
+               </tr>
+            </table>
+                            
+         </li>
+                         
+         <li>
+                                
+                                    Modify the address in the browser to add "posts":
+                                <br>
+                                <pre>localhost:3000/posts</pre>
+                                
+                                    Notice the title, content, and date fields. Create a few
+                                    blog posts to test the application.
+                                <br>
+                            
+         </li>    
+                         
+                         
+         <li>
+                                
+                                    You can exit the application by pressing the Stop button located in the bottom right of the view
+                                    frame.
+                                <br>
+                            
+         </li>
+                     
+      </ol>
+              
+       
+      <br><nowrap><span style="font-size:75%;e"><img alt="Corporate Logo" src="../graphics/codegear16squared.png">CodeGear brand 
+            and product names are service marks, trademarks or registered trademarks of Borland Software 
+            Corporation in the United States and other countries.
+            </span></nowrap><br></body>
+</html>

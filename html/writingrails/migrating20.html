@@ -1,0 +1,80 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <script language="JavaScript" src="PLUGINS_ROOT/org.eclipse.help/livehelp.js"></script><link href="../style.css" rel="stylesheet" type="text/css">
+      <title>Migrating a Rails 1.x Project to Rails 2.0</title>
+   </head>
+   <body>
+      <a name="migrating_a_rails_1_x_project_to_rails_2_0"></a><h1>Migrating a Rails 1.x Project to Rails 2.0</h1>
+       
+       
+      <p>
+         Though the complexity and variability of potential Rails 1.x projects prohibits a cut and dried, one-size-fits-all
+         solution for migrating to Rails 2.0, 3rdRail does provide validation and, where possible, automatic fixes for many 
+         issues that arise when migrating a Rails 1.x project to Rails 2.0.  This document provides best practices for making
+           this transition using 3rdRail.
+          
+      </p>
+       
+       
+        
+      <p><strong>To migrate a Rails 1.x project to Rails 2.0</strong></p>
+        
+      <ol>
+            
+         <li>
+                Save a copy of the project before beginning.  Either use your revision control system or do an Export:
+                <br>
+                
+                 
+                  <span class="menuItem">File<img alt="|" height="9" width="11" src="../graphics/path.jpg"></span>
+                  <span class="menuItem">Export<img alt="|" height="9" width="11" src="../graphics/path.jpg"></span>
+                  <span class="menuItem">General<img alt="|" height="9" width="11" src="../graphics/path.jpg"></span>
+                  <span class="menuItem">File System</span>
+                 
+                 Click Next, choose your project, choose a destination directory and click Finish.
+                <br>
+               
+         </li>
+            
+         <li>
+                
+                 First update your project to Rails 1.2.6.  This version of Rails exists largely to provide deprecation warnings
+                 for things which have been removed from Rails 2.0.
+                <br>
+                
+                 Open environment.rb, found in the <span class="menuItem">Configuration</span> section of your project.  Edit the RAILS_GEM_VERSION to be 1.2.6.  Save the file.
+                <br>
+               
+         </li>
+            
+         <li>
+                
+                  Saving the file will kick off an automatic build process.  
+                  Now click on the <span class="menuItem">Problems</span> view in the area below
+                  the editor.  Resolve any warnings or errors that appear.  For common issues,
+                  3rdRail will often have a <span class="menuItem">Quick Fix</span> implemented.
+                  Right-click on the problem and choose <span class="menuItem">Quick Fix</span>.
+                <br>
+            
+               
+         </li>
+            
+         <li>
+                
+                  Once all the warnings and errors have been resolved for 1.2.6, repeat the process for RAILS_GEM_VERSION 2.0.2.
+                <br>
+            
+               
+         </li>
+           
+      </ol>
+       
+       <span class="linkList"><span class="listedLink">
+               <a href="http://weblog.rubyonrails.com/2007/12/7/rails-2-0-it-s-done">Rails 2.0 Announcement [rubyonrails.com]</a>
+              </span></span>
+      <br><nowrap><span style="font-size:75%;e"><img alt="Corporate Logo" src="../graphics/codegear16squared.png">CodeGear brand 
+            and product names are service marks, trademarks or registered trademarks of Borland Software 
+            Corporation in the United States and other countries.
+            </span></nowrap><br></body>
+</html>

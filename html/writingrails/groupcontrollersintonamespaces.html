@@ -1,0 +1,66 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <script language="JavaScript" src="PLUGINS_ROOT/org.eclipse.help/livehelp.js"></script><link href="../style.css" rel="stylesheet" type="text/css">
+      <title>Organizing Controllers using Namespaces</title>
+   </head>
+   <body>
+      <a name="organizing_controllers_using_namespaces"></a><h1>Organizing Controllers using Namespaces</h1>
+          
+          
+      <p>Your project may have many controllers, and some of them may perform similar functions. 
+         You can group controllers into namespaces as a way of organizing them. 
+                 In 3rdRail you do this when you create the controller. 
+      </p>
+          
+              
+      <p><strong>
+                        To create a controller and assign its namespace:
+                    </strong></p>
+              
+      <ol>
+                     
+         <li>
+                            
+                                Open the
+                                <br>
+                            
+                                <a href="javascript:executeCommand(&#34;org.eclipse.ui.newWizard(newWizardId=com.codegear.rails.ui.wizards.newRailsController)&#34;)">
+                                       New Controller Wizard
+                                   </a>
+                                <img src="../graphics/application_go.png" alt="New Rails Project Wizard" width="16" height="16">
+                                <br>
+                            
+                                    
+                                        <span class="menuItem">File <img alt="|" height="9" width="11" src="../graphics/path.jpg"></span>
+                                        <span class="menuItem">New <img alt="|" height="9" width="11" src="../graphics/path.jpg"></span>
+                                        <span class="menuItem">Rails Controller. </span>
+                                    
+                            <br>
+                        
+         </li>
+                     
+         <li>
+                            
+                               When you type the name of the controller, use the Rails syntax that includes a namespace:  
+                            <br>
+                            <pre>{namespace_name}/{controller_name}</pre>
+                        </li>
+                     
+         <li>
+                            
+                                Complete the steps in the <a href="creatingrailscontroller.html">Controller Wizard</a>.  
+                            <br>
+                        
+         </li>
+                 
+      </ol>
+          
+          
+      <p><strong>To create a controller using the <span class="menuItem">Rails Console</span>, type:</strong></p>
+          <pre>script/generate controller {namespace_name}/{controller_name}</pre>
+      <br><nowrap><span style="font-size:75%;e"><img alt="Corporate Logo" src="../graphics/codegear16squared.png">CodeGear brand 
+            and product names are service marks, trademarks or registered trademarks of Borland Software 
+            Corporation in the United States and other countries.
+            </span></nowrap><br></body>
+</html>

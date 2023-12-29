@@ -1,0 +1,74 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <script language="JavaScript" src="PLUGINS_ROOT/org.eclipse.help/livehelp.js"></script><link href="../style.css" rel="stylesheet" type="text/css">
+      <title>Renaming a Controller</title>
+   </head>
+   <body>
+      <a name="renaming_a_controller"></a><h1>Renaming a Controller</h1>
+          
+      <p>
+         Rename Controller understands the semantics and 
+         relationships of Controllers, Views, Helpers and Tests. 
+         Rename Controller goes beyond renaming the Controller, 
+         the Controller file and references to the Controller class. 
+         Rename Controller also applies Rails logical relationship 
+         and naming rules to the associated views, helpers, tests 
+         and the view directories. 
+             
+      </p>
+          
+      <p>
+                 It also handles multiple definitions 
+                 of the Controller class, for instance the additional definition 
+                 of the Controller class in the related functional test.
+             
+      </p>
+          
+      <p>
+                 These are the major items handled by Controller refactoring:
+             
+      </p>
+          
+      <ul>
+                 
+         <li>Renames the Controller file to follow Rails naming conventions.</li>
+                 
+         <li>Renames the Controller class and references to the Controller class.</li>
+                 
+         <li>Renames the associated Rails helper class and file.</li>
+                 
+         <li>
+                            Renames the associated Rails functional test class and file.
+                        
+         </li>
+                 
+         <li>Renames relevant logical Controller references such as :Controller =&gt; &#8220;Controller_name&#8221;.</li>
+                 
+         <li>Renames associate layout and references.</li>
+                 
+         <li>Renames the View directory.</li>
+                 
+         <li>Renames the Controller references in routes. 
+                        
+         </li>
+             
+      </ul>
+          
+      <table class="notes">
+         <tr>
+            <td class="notes">
+               <p class="warning">Warning: </p>
+            </td>
+            <td class="notes">
+               <p>This does not rename a named route, 
+                              just the references within the route.
+               </p>
+            </td>
+         </tr>
+      </table>
+      <br><nowrap><span style="font-size:75%;e"><img alt="Corporate Logo" src="../graphics/codegear16squared.png">CodeGear brand 
+            and product names are service marks, trademarks or registered trademarks of Borland Software 
+            Corporation in the United States and other countries.
+            </span></nowrap><br></body>
+</html>

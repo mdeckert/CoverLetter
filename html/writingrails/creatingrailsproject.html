@@ -1,0 +1,276 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <script language="JavaScript" src="PLUGINS_ROOT/org.eclipse.help/livehelp.js"></script><link href="../style.css" rel="stylesheet" type="text/css">
+      <title>Creating a New Rails Project</title>
+   </head>
+   <body>
+      <a name="creating_a_new_rails_project"></a><h1>Creating a New Rails Project</h1>
+       
+       
+      <p>
+           You can create a new Rails project  using the <span class="menuItem">New Rails Project Wizard</span> 
+           or the <span class="menuItem">Project Commander</span>.
+           If you have an existing project in a Subversion (SVN) repository,
+           you can use it to create a new 3rdRail project.
+          
+      </p>
+       
+       
+        
+      <p><strong>To create a new Rails project using the New Rails Project Wizard</strong></p>
+        
+      <ol>
+            
+         <li>
+                Open the 
+                 <a href="javascript:executeCommand(&#34;org.eclipse.ui.newWizard(newWizardId=com.codegear.rails.ui.wizards.newRailsProject)&#34;)">
+                     New Rails Project Wizard
+                    </a>
+                 <img src="../graphics/application_go.png" alt="New Rails Project Wizard" width="16" height="16">
+                <br>
+                
+                 
+                  <span class="menuItem">File<img alt="|" height="9" width="11" src="../graphics/path.jpg"></span>
+                  <span class="menuItem">New Rails Project.</span>
+                 
+                <br>
+               
+         </li>
+            
+         <li>
+                
+                 Set the following  Project Options:
+                <br>
+                
+            <ul>
+                    
+               <li>
+                         Name the project.
+                        
+               </li>
+                    
+               <li>
+                         Set the project directory. Use the default location or click <span class="menuItem">Browse</span>
+                         to navigate to the desired location.
+                        
+               </li> 
+                   
+            </ul>
+               
+         </li>
+            
+         <li>
+                
+                   Choose the <span class="menuItem">Rails Version</span>.
+                   The list is dynamically populated based on your system configuration.
+                  <br>
+            
+               
+         </li>
+            
+         <li>
+                
+                   Choose the <span class="menuItem">Database Type</span>. 
+                   The default depends on your OS and Rails version. 
+                   CodeGear recommends that you try 
+                   <a href="../3rdrailenvironment/usinginterbase.html">using InterBase</a>.
+                  <br>
+            
+               
+         </li>
+            
+         <li>
+                
+                 Choose the <span class="menuItem">Ruby Interpreter</span>:
+                <br>
+                
+                 If the interpreter is not configured
+                 select <span class="menuItem">Configure Interpreter</span>.
+                 The Preferences Installed Interpreters dialog lists the  interpreters. 
+                 If the list is empty, select <span class="menuItem">Search. </span>
+                 If you installed Ruby as part of your 3rdRail installation process, 
+                 the search results will show <span class="codeInline">ruby.exe</span>.  Make sure it is checked,
+                 and click OK. 
+                <br>
+               
+         </li>
+         
+            
+         <li>
+                
+                 Click <span class="menuItem">Finish</span>.<br>
+                
+                The <span class="menuItem">Rails Explorer</span> lists the new project. 
+                 The 
+                 <span class="menuItem">Project Commander</span> 
+                 opens 
+                 and shows the commands used to create the project and the resulting files.
+                Clicking on any of the hyperlinked files 
+                will open that file in the editor area. <br>
+                
+                
+                 The server is automatically configured based on the Project Options settings.<br>
+               
+         </li>
+           
+      </ol>
+        
+         
+      <p><strong>To create a new project using the Project Commander</strong></p>
+         
+      <ol>
+             
+         <li>
+                 Click 
+                  
+                  <span class="menuItem">Window<img alt="|" height="9" width="11" src="../graphics/path.jpg"></span>
+                   <span class="menuItem">Project Commander</span>.
+                   <br>
+                
+         </li>
+             
+         <li>
+                 
+                  From the prompt type:
+                 <br>
+                 <pre>Rails {new project name}</pre>
+                </li>
+             
+         <li>
+                 3rdRail creates the new project.<br>
+                
+         </li>
+             
+         <li>
+                 
+                  Use <span class="keyboard">CRTL</span>+<span class="keyboard">SPACE</span>
+                  to  access Rails options.
+                 <br>
+                
+         </li>
+            
+      </ol>
+        
+        
+         
+      <p><strong>To create a new project using an existing project in SVN</strong></p>
+      
+         
+      <ol>
+             
+         <li>
+                Use the <span class="menuItem">Checkout from SVN</span> wizard to bring an existing project into 3rdRail. 
+                 This is helpful when you have multiple developers on the same project, using the same source.
+                 If you have an existing Rails project that is not under source control and you want to import
+                 it to 3rdRail, see 
+                 <a href="importingrailsproject.html">Importing a Rails Project.</a>
+                <br>
+                 
+         </li>
+          
+             
+         <li>
+                 Click 
+                  
+                   <span class="menuItem">File<img alt="|" height="9" width="11" src="../graphics/path.jpg"></span>
+                  <span class="menuItem">Import<img alt="|" height="9" width="11" src="../graphics/path.jpg"></span> 
+                 <span class="menuItem">Other<img alt="|" height="9" width="11" src="../graphics/path.jpg"></span>
+                 <span class="menuItem">Checkout Projects from SVN<img alt="|" height="9" width="11" src="../graphics/path.jpg"></span>
+                  <span class="menuItem">Next.</span>
+                   <br>
+                
+         </li>
+             
+         <li>
+                Check 
+                 
+                  <span class="menuItem">Create a new repository location<img alt="|" height="9" width="11" src="../graphics/path.jpg"></span>
+                 <span class="menuItem">Next.</span>
+                  <br>
+                
+         </li>
+             
+         <li>
+                 
+                  Enter the URL for the project, such as
+                  <span class="codeInline">http://redmine.rubyforge.org/svn/</span>,
+                  and click  <span class="menuItem">Next.</span>
+                 <br>
+                
+         </li>
+              
+         <li>
+                  
+                   The wizard shows the SVN directory structure.
+                   Select  the folder you want to check out
+                   and click  <span class="menuItem">Next.</span>
+                  <br>
+                 
+         </li>
+              
+         <li>
+                  
+                   For a new project in 3rdRail, leave the default as:
+                   Check out as a project configured using the New Project Wizard.
+                   You can choose which SVN revision to use, or by default get the head revision.
+                   Click  <span class="menuItem">Finish.</span>
+                  <br>
+                 
+         </li>  
+              
+         <li>
+                  
+                   The New Project wizard opens.
+                   Choose
+                   
+                   <span class="menuItem">Rails<img alt="|" height="9" width="11" src="../graphics/path.jpg"></span>
+                   <span class="menuItem">Rails Project<img alt="|" height="9" width="11" src="../graphics/path.jpg"></span>
+                   <span class="menuItem">Next.</span>
+                    
+                  <br>
+                 
+         </li>
+              
+         <li>
+                  
+                   The New Rails Project wizard opens.
+                   Name the project and click
+                   <span class="menuItem">Finish.</span>
+                   If you have not 
+                   <a href="writingruby/configuringrubyinterpreter.html">configured a Ruby interpreter</a>, 
+                   you will be prompted to do so. 
+                  <br>
+                 
+         </li>
+              
+         <li>
+                  3rdRail first creates a default Rails project, then copies in the SVN files. 
+                   Depending on your project, some of the SVN files will need to overwrite
+                   the new default files. If you get a prompt asking to confirm overwrites, 
+                   click  <span class="menuItem">OK.</span><br>
+                 
+         </li>
+              
+         <li>
+                  
+                   3rdRail completes the checkout, 
+                   and the <span class="menuItem">Rails Explorer</span> displays your new project.
+                   The <span class="menuItem">Project Commander</span> shows the Rails commands and hyperlinks to the new files.
+                  <br>
+                 
+         </li>
+            
+      </ol>
+        
+       
+       <span class="linkList"><span class="listedLink">
+               <a href="writingrailsapplications.html">Writing Rails Applications</a>
+              </span><span class="listedLink">
+               <a href="../writingruby/configuringrubyinterpreter.html">Configuring the Ruby Interpreter</a>
+              </span></span>
+      <br><nowrap><span style="font-size:75%;e"><img alt="Corporate Logo" src="../graphics/codegear16squared.png">CodeGear brand 
+            and product names are service marks, trademarks or registered trademarks of Borland Software 
+            Corporation in the United States and other countries.
+            </span></nowrap><br></body>
+</html>
