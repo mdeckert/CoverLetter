@@ -49,3 +49,7 @@ And here are a few more historical samples:
   - [Thesis Excerpt](Samples/MarkDeckertThesisExcerpt.pdf)
   - [Peer to PCAST](https://www.researchgate.net/profile/Warren-Sack/publication/262324560_Peer_to_PCAST_What_does_open_video_have_to_do_with_open_government/links/550722230cf26ff55f7bc9f4/Peer-to-PCAST-What-does-open-video-have-to-do-with-open-government.pdf)
   - [Metavid.org](https://d1wqtxts1xzle7.cloudfront.net/49404861/Metavid.org_A_Social_Website_and_Open_Ar20161006-14837-93hxwh-libre.pdf?1475771353=&response-content-disposition=inline%3B+filename%3DMetavid_org_A_Social_Website_and_Open_Ar.pdf&Expires=1703886484&Signature=Vx-ksAO9Yqf5tQptsvCopdAcnEExjNr~bYHi5dwc-Be23LCFJ3E~nf~ib41mUG1O4gIMBLsoDD~iNxKJblC95JT5-hWlVpqZnIa3zjCzXzyIjqkGmMzxrt-v~LEw0I8~xFB1-fiYRQJ2M~Sm-2~7o2xBplFG~VHmkqBO0Zy~egVdrYmdV-pITfjNSua8GvUzRaaw42ZygDKf~Tg6fkotc6ERqBs0R9BMP1AkRg6RPQqOirYZVu21sYLNS-TXpSgUJZGoZosNK3ZVgqAdQ6aheGJEoLwzonFPvgW-VcsoAa9VlBHwUSW7VSnOZm-dSgarxBfQlJ~yjlgrQTDBUnIhqQ__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA)
+
+And, finally, a resume:
+
+- [Resume](MarkDeckertTechWriter.pdf)
