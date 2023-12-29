@@ -1,6 +1,8 @@
-I wanted a pdf coverletter to upload that would link back to the markdown samples
+# Markdown to PDF
+
+I wanted a pdf cover letter to upload that would link back to the markdown samples
 I created here.  In order to get one that looked nice, I had to use the following 
-process which I document here in case I need to reproduce an edited PDF later
+process which I document here in case I need to reproduce an edited PDF later.
 
 ```
 pip3.9 install grip
