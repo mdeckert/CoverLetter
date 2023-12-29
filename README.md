@@ -40,11 +40,11 @@ connections).
 
 And here are a few more historical samples:
 
+- Product Documentation
+  - [3rd Rail](https://htmlpreview.github.io/?https://github.com/mdeckert/CoverLetter/blob/main/Samples/3rdRailDocs/index.html)
 - Internal Engineering
   - [Customer Visible Optimization Status](Samples/CustomerVisibleOptimizationStatus.png)
   - [Kernel Crashdumps](Samples/KernelCrashdumps.png) 
-- Product Documentation
-  - [3rd Rail](https://htmlpreview.github.io/?https://github.com/mdeckert/CoverLetter/Samples/3rdRailDocs/index.html)
 - Academic:
   - [Thesis Excerpt](Samples/MarkDeckertThesisExcerpt.pdf)
   - [Peer to PCAST](https://www.researchgate.net/profile/Warren-Sack/publication/262324560_Peer_to_PCAST_What_does_open_video_have_to_do_with_open_government/links/550722230cf26ff55f7bc9f4/Peer-to-PCAST-What-does-open-video-have-to-do-with-open-government.pdf)
