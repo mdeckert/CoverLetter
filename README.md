@@ -3,21 +3,21 @@
 To whom it may concern,
 
 Over the last 25 years I have worked primarily as a software developer doing backend web development. 
-In addition, I have worked as a test automation engineer, systems administrator and technical writer. 
+Additionally, I have worked as a test automation engineer, systems administrator and technical writer. 
 While creating REST APIs for large variety of software systems, I discovered a passion for maintaining the accuracy and usability of the documentation accompaning these APIs.  
 I am presently searching for a new role that will allow me to leverage both my experience as a backend dev and my passion for creating highly usable documentation.
 
 ## Writing Samples
 
 - Academic:
-  - [Thesis Excerpt](MarkDeckertThesisExcerpt.pdf)
+  - [Thesis Excerpt](Samples/MarkDeckertThesisExcerpt.pdf)
   - [Peer to PCAST](https://www.researchgate.net/profile/Warren-Sack/publication/262324560_Peer_to_PCAST_What_does_open_video_have_to_do_with_open_government/links/550722230cf26ff55f7bc9f4/Peer-to-PCAST-What-does-open-video-have-to-do-with-open-government.pdf)
   - [Metavid.org](https://d1wqtxts1xzle7.cloudfront.net/49404861/Metavid.org_A_Social_Website_and_Open_Ar20161006-14837-93hxwh-libre.pdf?1475771353=&response-content-disposition=inline%3B+filename%3DMetavid_org_A_Social_Website_and_Open_Ar.pdf&Expires=1703886484&Signature=Vx-ksAO9Yqf5tQptsvCopdAcnEExjNr~bYHi5dwc-Be23LCFJ3E~nf~ib41mUG1O4gIMBLsoDD~iNxKJblC95JT5-hWlVpqZnIa3zjCzXzyIjqkGmMzxrt-v~LEw0I8~xFB1-fiYRQJ2M~Sm-2~7o2xBplFG~VHmkqBO0Zy~egVdrYmdV-pITfjNSua8GvUzRaaw42ZygDKf~Tg6fkotc6ERqBs0R9BMP1AkRg6RPQqOirYZVu21sYLNS-TXpSgUJZGoZosNK3ZVgqAdQ6aheGJEoLwzonFPvgW-VcsoAa9VlBHwUSW7VSnOZm-dSgarxBfQlJ~yjlgrQTDBUnIhqQ__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA)
 - Product Documentation
-  - [3rd Rail](3rdRailDocs/index.html)
+  - [3rd Rail](Samples/3rdRailDocs/index.html)
 - Internal Engineering
-  - [Customer Visible Optimization Status](CustomerVisibleOptimizationStatus.png)
-  - [Kernel Crashdumps](KernelCrashdumps.png) 
+  - [Customer Visible Optimization Status](Samples/CustomerVisibleOptimizationStatus.png)
+  - [Kernel Crashdumps](Samples/KernelCrashdumps.png) 
 
 And a quick inline sample
 
