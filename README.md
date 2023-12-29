@@ -12,21 +12,21 @@ I am presently searching for a new role that will allow me to leverage both my e
 Here's a quick inline sample of some engineering writing:
 
 ```
-Accumulating Peak Connections Data Across Nodes into 5 Minute Buckets
+Accumulating Peak Connections Data Across Nodes into 5-Minute Buckets
 
-Since stats data will come in at 30 second intervals and the intervals
+Since stats data will come in at 30-second intervals and the intervals
 are not guaranteed to have aligned timestamps across nodes, we must make an 
 approximation of overall peak connections based on available data. If we 
 assume that the number of concurrent connections is reasonably well distributed 
 across nodes by the load balancer, we can capture a reasonable peak total 
 connections estimate by having the worker process run at a frequency that will
-cover a small but nonzero number of readings from each node in redis (e.g. 2 
-minute interval gets approximately 4 entries for each node). At each interval, 
-we find the maximum peak connections for each node over that small period and 
-combine those maximums for an approximate peak total connections over the period 
-spanned by all the timestamps currently in redis. This peak connections number
-is then compared to any previously recorded peak connections already in the 
-relevant 5 min time bucket and updated with the maximum value.
+cover a small but nonzero number of readings from each node in redis (e.g., 
+2-minute interval gets approximately four entries for each node). At each
+interval, we find the maximum peak connections for each node over that small 
+period and combine those maximums for an approximate peak total connections 
+over the period spanned by all the timestamps currently in redis. This peak
+connections number is then compared to any previously recorded peak connections
+already in the relevant 5-minute time bucket and updated with the maximum value.
 
 Such an approximation could be slightly higher than the actual peak connections 
 but should never underestimate the peak connections. Furthermore, this estimate
