@@ -4,7 +4,7 @@ To whom it may concern,
 
 Over the last 25 years I have worked primarily as a software developer doing backend web development.
 Additionally, I have worked as a test automation engineer, systems administrator and technical writer.
-While creating REST APIs for large variety of software systems, I discovered a passion for maintaining the accuracy and usability of the documentation accompaning these APIs.
+While creating REST APIs for large variety of software systems, I discovered a passion for maintaining the accuracy and usability of the documentation accompanying these APIs.
 I am presently searching for a new role that will allow me to leverage both my experience as a backend dev and my passion for creating highly usable documentation.
 
 ## Writing Samples
@@ -40,9 +40,9 @@ connections).
 
 And here are a few more historical samples:
 
-- Product Documentation
+- Product Documentation:
   - [3rd Rail](https://htmlpreview.github.io/?https://github.com/mdeckert/CoverLetter/blob/main/Samples/3rdRailDocs/index.html)
-- Internal Engineering
+- Internal Engineering:
   - [Customer Visible Optimization Status](Samples/CustomerVisibleOptimizationStatus.png)
   - [Kernel Crashdumps](Samples/KernelCrashdumps.png) 
 - Academic:
